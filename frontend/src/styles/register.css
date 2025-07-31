@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif;
+}
+
+body {
+ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  overflow-x: hidden;
+}
+
+.beams-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Centered registration box */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.register-box {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.brand-title {
+  font-size: 36px;
+  color: #ff0055;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form-subtext {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* Input styles */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="file"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #111;
+  color: white;
+  font-size: 15px;
+}
+
+form input[type="file"]::file-selector-button {
+  background-color: #ff0055;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.upload-label {
+  text-align: left;
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #eee;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e60048;
+}
+
+/* Redirect to login */
+.redirect-login {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.redirect-login span {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register-form-container {
+  margin-top: -20px; 
+
+  
+}
